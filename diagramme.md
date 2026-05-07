@@ -1,10 +1,10 @@
 erDiagram
-    ETABLISSEM ||--|| CATEO : "appartient à"
-    ETABLISSEM ||--o| Cartographis_struct : "est décrit par"
-    ETABLISSEM ||--o{ Finace_di : "possède"
-    ETABLISSEM ||--o{ Indicateur_Tech : "génère"
-    ETABLISSEM ||--o{ Personnel : "emploie"
-    ETABLISSEM ||--o{ Source : "utilise"
+    ETABLISSEM ||--|| CATEO : appartient
+    ETABLISSEM ||--o| Cartographis_struct : decrit
+    ETABLISSEM ||--o{ Finace_di : possede
+    ETABLISSEM ||--o{ Indicateur_Tech : genere
+    ETABLISSEM ||--o{ Personnel : emploie
+    ETABLISSEM ||--o{ Source : utilise
 
     ETABLISSEM {
         int id PK
@@ -57,5 +57,5 @@ erDiagram
 
     Source {
         int id PK
-        string type_source "SNEL / PANNEAU"
+        string type_source
     }
